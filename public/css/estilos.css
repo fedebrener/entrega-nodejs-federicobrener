@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(248, 248, 248);;
+}
+
+header {
+    width: 100vw;
+    height: 180px;
+    position: fixed;
+    background-color: white;
+}
+
+#logonav {
+    display: block;
+    width: 200px;
+    padding: 30px;
+    margin: auto;
+}
+
+#menu-nav {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#menu-nav li {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#carrito {
+    width: 20px;
+}
+
+#carrito:hover {
+    opacity: 0.5;
+}
+
+#menu-nav a {
+    color: black;
+    margin-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+#menu-nav li:not(:last-child):hover {
+    border-bottom: 2px solid black;
+}
+
+main {
+    padding-top: 180px;
+}
+
+#slider{
+    background-image: url(../img/slider1.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    animation: slider 10s 2s infinite;
+}
+
+@keyframes slider {
+    0% {background-image: url(../img/slider1.jpg) }
+    25% {background-image: url(../img/slider2.jpg);}
+    50% {background-image: url(../img/slider3.jpg);}
+    100% {background-image: url(../img/slider1.jpg);}
+}
+
+#slider h1 {
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 240px;
+    padding-left: 80px;
+}
+
+#slider a {
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 15px 40px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#slider a:hover {
+    background-color: transparent;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+}
+
+#categorias {
+    margin-top: 40px;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "jean remeras deportivo";
+    grid-template-columns: 30vw 30vw 30vw;
+    justify-content: center;
+}
+
+#categorias div {
+    height: 500px;
+    margin: 10px;
+    text-align: center;
+}
+
+#categorias div a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px 40px;
+    margin-top: 350px;
+}
+
+#categorias div a:hover {
+    background-color: white;
+    color: black;
+}
+
+#jeans {
+    background-image: url(/img/jeans.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: jean;
+}
+
+#remeras {
+    background-image: url(/img/remera.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: remeras;
+}
+
+#deportivos { 
+    background-image: url(/img/deportivos.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: deportivo;
+}
+
+#newslatter {
+    margin-top: 40px;
+    height: 350px;
+    width: 100vw;
+    background-color: rgba(240, 240, 240, 0.8);
+    text-align: center;
+}
+
+#newslatter h2 {
+    padding-top: 80px;
+}
+
+#newslatter p {
+    padding-top: 10px;
+}
+
+#newslatter form {
+    padding-top: 30px;
+}
+
+#look-berkano {
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo titulo"
+                         "look1 look2 look3 look4";
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 23vw 23vw 23vw 23vw;
+    justify-content: center;
+}
+
+#look-berkano div {
+    height: 400px;
+    background-color: gray;
+    margin: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#look-berkano h2 {
+    grid-area: titulo;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#look1 {
+    background-image: url(/img/look1.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: look1;
+}
+
+#look2 {
+    background-image: url(/img/look2.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: look2;
+}
+
+#look3 {
+    background-image: url(/img/look3.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: look3;
+}
+
+#look4 {
+    background-image: url(/img/look4.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: look4;
+}
+
+footer {
+    background-color: rgba(240, 240, 240, 0.8);
+    height: 180px;
+    width: 100vw;
+    text-align:center;
+    padding-top: 20px;
+}
+
+footer a img {
+    width: 30px;
+    margin: 10px 0px 50px 0px;
+}
+
+footer a img:hover {
+    opacity: 0.8;
+}
+
+#copy {
+    font-size: 12px;
+    width: 80vw;
+    margin: auto;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+#main-catalogo h2 {
+    width: 80%;
+    font-size: 28px;
+    padding-top: 40px;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+
+.catalogo-productos {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(3, 500px);
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 30px;
+    row-gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagen-producto {
+    width: 300px;
+    height: 380px;
+    margin-bottom: 5px;
+    object-fit: cover;
+  }
+  
+.tarjeta-producto {
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(240, 240, 240, 0.8);
+    cursor: pointer;
+  }
+
+.tarjeta-producto h3 {
+    font-size: 16px;
+    width: 80%;
+    border-bottom: solid 1px gray;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto p {
+    text-align: center;
+    font-style: italic;
+}
+
+.tarjeta-producto button {
+    font-family: montserrat;
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+@media (max-width: 760px) {
+
+    header {
+        width: 100vw;
+        height: 150px;
+    }
+
+    #logonav {
+        width: 150px;
+        padding: 25px;
+    }
+    
+    main {
+        padding-top: 150px;
+    }
+
+    #slider{
+        background-position: center center;
+    }
+
+    #slider h1 {
+        font-size: 40px;
+        padding-left: 40px;
+    }
+    
+    #slider a {
+        padding: 15px 40px;
+        margin-left: 40px;
+    }
+
+    #categorias {
+        width: 90vw;
+        margin: auto;
+        grid-template-areas: "jean" 
+                             "remeras" 
+                             "deportivo";
+        grid-template-rows: repeat(3, 380px);
+        row-gap: 10px;
+        grid-template-columns: 1fr;
+    }
+    
+    #categorias div {
+        height: 380px;
+    }
+    
+    #categorias div a {
+        margin-top: 300px;
+    }
+
+    #newslatter h2 {
+        padding-top: 60px;
+    }
+
+    #look-berkano {
+        grid-template-areas: "titulo titulo"
+                             "look1 look2"
+                             "look3 look4";
+        grid-template-rows: 50px 400px 400px;
+        grid-template-columns: 45vw 45vw;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
+    #look-berkano div {
+        height: 400px;
+        margin: 0px;
+    }
+    
+    .catalogo-productos {
+        grid-template-rows: repeat(9, 500px);
+        grid-template-columns: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+      
+    .tarjeta-producto {
+        margin: auto;
+      }
+
+}

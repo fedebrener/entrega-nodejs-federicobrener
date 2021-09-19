@@ -1,0 +1,47 @@
+<%- include('base'); %>
+
+<main>
+    <section id="slider">
+        <h1>NUEVA<br>COLECCIÓN</h1>
+        <a href="/catalogo">Ver mas</a>
+    </section>
+
+    <section id="categorias">
+        <div id="jeans">
+            <a href="/catalogo">JEANS</a>
+        </div>
+        <div id="remeras">
+            <a href="/catalogo">REMERAS</a>
+        </div>
+        <div id="deportivos">
+            <a href="/catalogo">DEPORTIVOS</a>
+        </div>
+    </section>
+
+    <section id="newslatter">
+        <h2> INSCRIBITE A NUESTRO NEWSLATTER </h2>
+        <p>¡Recibi beneficios y enterate de todas nuestras novedades!</p>
+        <form method="POST" action="http://localhost:4000/newslatter">
+            <input type="email" name="name" required="email" placeholder="Ingresa tu email"
+                style="height: 30px; width: 250px; display: block; margin: auto; font-family: Montserrat;">
+            <input type="submit" value="Inscribirme"
+                style="width: 100px; height: 50px; margin-top: 10px; font-family: Montserrat;">
+        </form>
+    </section>
+    </section>
+
+    <section id="look-berkano">
+        <h2>ARMA TU LOOK BERKANO</h2>
+        <div id="look1">
+        </div>
+        <div id="look2">
+        </div>
+        <div id="look3">
+        </div>
+        <div id="look4">
+        </div>
+    </section>
+
+</main>
+
+<%- include('footer'); %>

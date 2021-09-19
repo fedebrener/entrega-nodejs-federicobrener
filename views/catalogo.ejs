@@ -1,0 +1,30 @@
+<%- include('base'); %>
+
+    <main id="main-catalogo">
+        <h2>
+            CATALOGO
+        </h2>
+        <section class="catalogo-productos">
+
+            <% productos.forEach(producto=> { %>
+                <div class="tarjeta-producto">
+                    <img class="imagen-producto" alt="" src="<%=producto.imagen%>">
+                    <h3>
+                        <%=producto.nombre%>
+                    </h3>
+                    <p>
+                        <%=producto.color%>
+                    </p>
+                    <p>
+                        <%=producto.precio%>
+                    </p>
+                    <button>
+                        <%=producto.boton%>
+                    </button>
+                </div>
+                <% }); %>
+        
+        </section>
+    </main>
+
+    <%- include('footer'); %>

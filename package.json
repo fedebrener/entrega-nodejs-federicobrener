@@ -1,0 +1,17 @@
+{
+  "name": "entreganodejs",
+  "version": "1.0.0",
+  "description": "Entrega nodejs Federico Brener",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Federico Brener",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
